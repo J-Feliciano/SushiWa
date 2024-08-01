@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    color:white;
+}
+.julee-regular {
+    font-family: "Julee", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.kdam-thmor-pro-regular {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.inter-regular-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.libre-bodoni-regular-font {
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.love-light-regular {
+    font-family: "Love Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+header{
+    position: sticky;
+    position: absolute;
+    top:0;
+    height: 180px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 40%);
+    filter:brightness(40%);
+    display: flex;
+    align-items: center;
+}
+header div{
+    color: white;
+    
+}
+#H-hud{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+#H-logo{
+    font-family: "Julee", cursive;
+}
+main{
+    width: 100%;
+}
+#M-home{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image:url(imagens/Fundo-inicio.png);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
