@@ -39,24 +39,39 @@ header{
     position: sticky;
     position: absolute;
     top:0;
-    height: 180px;
+    height: 100px;
     width: 100%;
     background-color: rgba(0, 0, 0, 40%);
     filter:brightness(40%);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 header div{
-    color: white;
+    color: #FFFF;
     
 }
 #H-hud{
     display: flex;
     justify-content: space-around;
-    width: 300px;
+    width: 900px;
+    
+}
+#H-hud a{
+    font-size: 15px;
+    font-family: "Kdam Thmor Pro", sans-serif;
 }
 #H-logo{
     font-family: "Julee", cursive;
+    padding: 0px 50px 0px 50px;
+    font-size: 30px;
+}
+#M-home:first-child{
+    font-size: 50px;
+}
+#H-logoCentro{
+    font-family: "Julee", cursive;
+    font-size: 150px;
 }
 main{
     width: 100%;
@@ -66,8 +81,15 @@ main{
     width: 100%;
     height: 100vh;
     background-image:url(imagens/Fundo-inicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+#M-QuemSomos{
+    width: 100%;
+    height: 100vh;
+
 }
