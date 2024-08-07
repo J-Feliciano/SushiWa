@@ -1,95 +1,135 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-a{
-    color:white;
+
+a {
+    color: white;
 }
+
+body {
+    background-image: url(imagens/Fundo-inicio.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
 .julee-regular {
     font-family: "Julee", cursive;
     font-weight: 400;
     font-style: normal;
 }
+
 .kdam-thmor-pro-regular {
     font-family: "Kdam Thmor Pro", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
 .inter-regular-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
+
 .libre-bodoni-regular-font {
     font-family: "Libre Bodoni", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
+
 .love-light-regular {
     font-family: "Love Light", cursive;
     font-weight: 400;
     font-style: normal;
 }
+.kavivanar-regular {
+    font-family: "Kavivanar", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
   
-header{
+
+header {
     position: sticky;
-    position: absolute;
-    top:0;
+    top: 0;
     height: 100px;
     width: 100%;
     background-color: rgba(0, 0, 0, 40%);
-    filter:brightness(40%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-header div{
+header hr{
+
+header div {
     color: #FFFF;
-    
+
 }
-#H-hud{
+    width: 54px;
+    rotate: 90deg;
+}
+#H-hud {
     display: flex;
     justify-content: space-around;
     width: 900px;
-    
+
 }
-#H-hud a{
+
+#H-hud a {
     font-size: 15px;
     font-family: "Kdam Thmor Pro", sans-serif;
 }
-#H-logo{
+
+#H-logo {
     font-family: "Julee", cursive;
     padding: 0px 50px 0px 50px;
     font-size: 30px;
 }
-#M-home:first-child{
+
+#M-home:first-child {
     font-size: 50px;
 }
-#H-logoCentro{
+
+#H-logoCentro {
     font-family: "Julee", cursive;
     font-size: 150px;
+    background: #FFFFFF;
+    background: linear-gradient(to right, #FFFFFF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-main{
+
+main {
     width: 100%;
 }
-#M-home{
+
+#M-home {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-image:url(imagens/Fundo-inicio.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-#M-QuemSomos{
+
+#M-QuemSomos {
     width: 100%;
     height: 100vh;
-
+}
+#M-QuemSomos div{
+    height: 400px;
+}
+#M-menu:first-child{
+    width: 500px;
+    height: 700px;
+}
+#M-Itens:nth-child(2){
+    font-family: "Kavivanar", cursive;
+    font-size: 35px;
 }
