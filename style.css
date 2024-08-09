@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -135,11 +136,20 @@ main {
     display: flex;
 }
 #M-ImgCoz{
-    width: 560px;
+    width: 575px;
     height: 540px;
-    background-color: wheat;
     margin: 0px 100px 0 250px;
+    position: relative; z-index: -1;
 }
+#M-ImgCoz1{
+    position: absolute;
+    top: 25px;
+}
+#M-ImgCoz2{
+    position: absolute;
+    left: 15px;
+}
+
 #M-Container{
     flex-direction: row;
     width: 450px;
@@ -151,6 +161,7 @@ main {
     font-size: 70px;
     margin-top: 50px;
     position: relative;
+    z-index: 2;
 }
 .TxtDuplo span{
     font-family:"Love Light", cursive;
@@ -164,21 +175,36 @@ main {
 #M-TxtLorem1{
     background-color: wheat;
     font-size: 20px;
-    font-family: inherit;
+    font-family: "Khand", sans-serif;
 }
 #M-Menu{
     display: flex;
     margin-left: 500px;
+    position: relative;
 }
 #M-Menu>.M-FundoMenu{
     padding: 10px 60px 75px 30px;
 }
 
-.M-FundoMenu{
+.M-FundoMenuCima{
     background: rgb(0,0,0);
     background: linear-gradient(320deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 50%, rgba(66,56,56,0.86) 100%);
     width: 500px;
     height: 750px;
+    padding-left: 20px;
+    z-index: -2;
+}
+.M-FundoMenuBaixo{
+    
+    background: rgb(0,0,0);
+    background: linear-gradient(320deg, rgba(66,56,56,0.86) 0%, rgba(0,0,0,0.9) 50%,  rgba(0,0,0,1) 100%);
+    width: 500px;
+    height: 750px;
+    padding-left: 20px;
+    position: absolute;
+    top: 750px;
+    left: 380px;
+    z-index: -2;
 }
 
 .M-Itens{
@@ -212,4 +238,16 @@ main {
 }
 .M-Itens hr{
     width: 50px; 
+}
+#M-FotoMenuCima{
+    position: absolute;
+    top:30px;
+    left: 470px;
+    z-index: -1;
+}
+#M-FotoMenuBaixo{
+    position: absolute;
+    top: 700px;
+    left: -40px;
+    z-index: -1;
 }
