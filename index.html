@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -42,14 +42,14 @@
         <hr>
         <div>
             <div id="H-logo">
-                SushiWa
+                <a href="index.html">SushiWa</a>
             </div>
         </div>
         <hr>
         <div id="H-hud">
-            <div><a href="">INICIO</a></div>
-            <div><a href="">MENU</a></div>
-            <div><a href="">SOBRE NÓS</a></div>
+            <div><a href="">CONTAS</a></div>
+            <div><a href="#M-Menu">MENU</a></div>
+            <div><a href="#M-QuemSomos">SOBRE NÓS</a></div>
             <div><a href="">PEDIDOS</a></div>
         </div>
         <hr>
@@ -175,18 +175,27 @@
         </div>
     </main>
     <footer>
-        <div>
-            <div class="F-Txt">Horários de funcionamento:
+        <div id="F-horarios">
+            <div class="F-Txt ">Horários de funcionamento:
                 <ul>
-                    <li>Quarta</li>
-                    <li>Quinta</li>
-                    <li>Sexta</li>
-                    <li>Sábado</li>
-                    <li>Domingo</li>
+                    <hr id="F-Vertical">
+                    <li>Quarta <span>19:30 - 23:30</span></li>
+                    <li>Quinta <span>19:30 - 23:30</span></li>
+                    <li>Sexta <span>19:30 - 23:30</span></li>
+                    <li>Sábado <span>19:30 - 23:30</span></li>
+                    <li>Domingo <span>19:30 - 23:30</span></li>
                 </ul>
             </div>
         </div>
-        <div></div>
+        <div id="F-forms">
+            <form action="">
+                <p><label for="nomefooter" class="F-Txt">Deseja entrar em contato?</label></p>
+                <input type="text" placeholder="Nome" id="nomefooter" class="F-Inputs"maxlength="35" autocomplete="off">
+                <input type="email" placeholder="exemplo@gmail.com" class="F-Inputs"maxlength="35"autocomplete="off">
+                <textarea placeholder="Escreva sua mensagem aqui..." class="F-Inputs F-txtarea" maxlength="180"></textarea>
+                <div><p><input type="submit" value="Enviar" class="F-Txt F-botao"></p></div>
+            </form>
+        </div>
     </footer>
 </body>
 

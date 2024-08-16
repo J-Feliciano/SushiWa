@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -138,58 +137,16 @@ header div {
 #H-pesquisa svg{
     width: 20px;
 }
-main {
-    width: 100%;
-}
 
-#M-home {
-    display: flex;
+main{
     width: 100%;
     height: 100vh;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#M-QuemSomos{
-    margin: 400px 0 ;
-    width: 100%;
-    height: 800px;
-    display: flex;
-}
-#M-ImgCoz{
-    width: 575px;
-    height: 540px;
-    margin: 0px 100px 0 250px;
-    position: relative;
-    z-index: -1;
-}
-#M-ImgCoz1{
-    position: absolute;
-    top: 25px;
-}
-#M-ImgCoz2{
-    position: absolute;
-    left: 15px;
 }
 
-#M-Container{
-    flex-direction: row;
-    width: 450px;
-    z-index: -2;
-}
-#M-Container div:last-child{
-    font-size: 50px;
-    color: #FF0505;
-    font-weight: 500;
-    font-family: "Khand", sans-serif;
-    text-align: center;
-    margin-top: 25px;
-}
 .TxtDuplo{
     font-family: "Libre Bodoni", serif;
     font-size: 70px;
-    margin-top: 50px;
+    margin-top: 30px;
     position: relative;
     z-index: 2;
 }
@@ -201,90 +158,108 @@ main {
     left: 10px;
     font-size: 80px;
     z-index: -1;
-}
-#M-TxtLorem1{
-    font-size: 20px;
-    font-family: "Khand", sans-serif;
-}
-#M-Menu{
-    display: flex;
-    margin-left: 500px;
-    position: relative;
-}
-#M-Menu>.M-FundoMenu{
-    padding: 10px 60px 75px 30px;
+    letter-spacing: 3px;
 }
 
-.M-FundoMenuCima{
-    background: rgb(0,0,0);
-    background: linear-gradient(320deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 50%, rgba(66,56,56,0.86) 100%);
-    width: 500px;
-    height: 750px;
-    padding-left: 20px;
-    z-index: -2;
-}
-.M-FundoMenuBaixo{
-    
-    background: rgb(0,0,0);
-    background: linear-gradient(320deg, rgba(66,56,56,0.86) 0%, rgba(0,0,0,0.9) 50%,  rgba(0,0,0,1) 100%);
-    width: 500px;
-    height: 750px;
-    padding-left: 20px;
-    position: absolute;
-    top: 750px;
-    left: 380px;
-    z-index: -2;
+.txtfont{
+    font: 100 22px "Libre Bodoni", serif;
 }
 
-.M-Itens{
-    padding-bottom: 30px;
+main{
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+#M-FundoCadastro{
+    display: flex;
+    position: relative;
+    margin-bottom: 150px;
+    width: 1000px;
+    height: 700px;
+    background: #D9D9D9;
+    background: linear-gradient(48deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 50%, rgba(66,56,56,0.7) 100%);
+    align-items:center;
+    justify-content: flex-start;
+    border-radius: 5px;
+}
+#M-fundoform{
+    width: 400px;
+    height: 500px;
+    background: rgb(0,0,0);
+    background: linear-gradient(309deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 50%, rgba(66,56,56,0.86) 100%);
+    border-radius: 25px;
+    margin-left: 50px;
+    padding-left: 25px;
+}
+#M-fundoform form{
+    color: white;
+    margin-top: 35px;
+}
+#M-fundoform input{
+    height: 30px;
+    width: 300px;
+    margin-bottom: 35px;
+    padding-left: 15px;
+    border-radius: 15px;
+    border: none;
+    font: 16px "Inter",sans-serif;
+    color: rgba(255, 255, 255, 90%);
+    background-color: rgba(255, 255, 255, 40%);
+}
+#M-fundoform input::selection{
+    background: #ff000059;
+    color: #ffffff;
+}
+form div{
+    display: flex;
+    width: 100%;
     flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
 }
-.M-Itens div:first-child{
-    font-family: "Kavivanar", cursive;
-    font-size: 35px;
-    color: white;
-    padding: 0px 220px 0px 10px ;
+.M-botao{
+    width: 150px;
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+    color: rgba(255, 255, 255, 80%);
+    background: rgb(255,5,5);
+    background: linear-gradient(48deg, rgba(255,5,5,1) 0%, rgba(0,0,0,0.8) 100%);
+    transition: 0.2s;
 }
-.M-Itens div:nth-child(2){
-    padding-left: 18px;
+.M-botao:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    width: 155px;
+    height: 30px;
+    font-size: 24px;
 }
-.M-Itens div:nth-child(3){
-    color: white;
-    font-family: "khand", sans-serif;
-    font-size: 20px;
-    padding-left: 50px;
-    padding-right: 10px;
-}
-.M-Itens div:last-child{
-    color:white;
-    padding-left: 10px;
-    font-family: "khand", sans-serif;
-    font-size: 20px;
-    
-}
-.M-Itens hr{
-    width: 50px; 
-}
-#M-FotoMenuCima{
-    position: absolute;
-    top:30px;
-    left: 470px;
-    z-index: -1;
-}
-#M-FotoMenuBaixo{
-    position: absolute;
-    top: 700px;
-    left: -40px;
-    z-index: -1;
+form div>p{
+    padding-top: 10px;
+    text-align: center;
+    font: 100 16px"khand", sans-serif;
 }
 
-#M-painelComida{
-   margin-top: 1200px;
-   margin-bottom: 400px;
+#M-imgComida{
+    position: absolute;
+    height: 730px;
+    width: 500px;
+    left: 700px;
+    top: 50px;
+    background-image:url(imagens/Entrar\ direita.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
 }
+#M-imgComida{
+    border-radius: 15px;
+}
+
+
+
+
 
 footer{
     display: flex;
@@ -368,4 +343,3 @@ footer li span{
     color: #FF0505;
     margin-left: 10px;
 }
-
